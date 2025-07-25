@@ -61,7 +61,10 @@
 
         createMap();
 
-        let workName = prompt("Please enter the artwork you want to search:");
+        let workName = prompt("Please enter the artwork you want to search:  (Mona Lisa A1,The Scream B2,The Starry Night C3,The Night Watch D4"); 
+
+
+    
         let locationKod = findWork(workName);
 
         if (locationKod != null) {
