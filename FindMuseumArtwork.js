@@ -1,4 +1,4 @@
-let artwork1 = { name: "Mona Lisa", artist: "Da Vinci", room: "room A1" };
+ let artwork1 = { name: "Mona Lisa", artist: "Da Vinci", room: "room A1" };
         let artwork2 = { name: "The Scream", artist: "Munch", room: "room B2" };
         let artwork3 = { name: "The Starry Night", artist: "Van Gogh", room: "room C3" };
         let artwork4 = { name: "The Night Watch", artist: "Rembrandt", room: "room D4" };
@@ -26,9 +26,9 @@ let artwork1 = { name: "Mona Lisa", artist: "Da Vinci", room: "room A1" };
         let room44 = { kod: "room D4", display: false }
 
         let rooms = [[room11, room12, room13, room14],
-         [room21, room22, room23,room24],
-          [room31, room32, room33, room34],
-           [room41, room42, room43, room44]];
+        [room21, room22, room23, room24],
+        [room31, room32, room33, room34],
+        [room41, room42, room43, room44]];
 
         function createMap() {
             console.clear();
@@ -38,7 +38,7 @@ let artwork1 = { name: "Mona Lisa", artist: "Da Vinci", room: "room A1" };
                     location += "|" + (rooms[i][j].display ? rooms[i][j].kod : "---") + "|";
                 }
                 console.log(location);
-                console.log("-----------------");
+                console.log("--------------------");
                 location = "";
             }
         }
@@ -64,10 +64,10 @@ let artwork1 = { name: "Mona Lisa", artist: "Da Vinci", room: "room A1" };
         let workName = prompt("Please enter the artwork you want to search:");
         let locationKod = findWork(workName);
 
-        if(locationKod != null){
+        if (locationKod != null) {
             displayOnMap(locationKod);
             createMap();
         }
-        else{
+        else {
             alert("this artwork doesn't exist.");
         }
